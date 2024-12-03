@@ -1,8 +1,6 @@
 #[path = "../util.rs"]
 mod util;
 
-use std::collections::HashMap;
-
 fn vec_is_increasing(v: &Vec<i32>) -> bool {
     for i in 0..(v.len() - 1) {
         if v[i] >= v[i + 1] || v[i + 1] - v[i] > 3 {
@@ -33,7 +31,7 @@ pub fn part_1() {
             .map(|x| x.parse::<i32>().unwrap())
             .collect::<Vec<i32>>();
 
-        if (vec_is_increasing(&nums) || vec_is_decreasing(&nums)) {
+        if vec_is_increasing(&nums) || vec_is_decreasing(&nums) {
             num_valid += 1
         }
     }
