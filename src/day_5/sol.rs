@@ -4,7 +4,7 @@ mod util;
 use std::collections::HashMap;
 
 pub fn part_1() {
-    let input: String = util::get_input_part(5, 2);
+    let input: String = util::get_input_part(5, 1);
 
     let mut part = 1;
     let mut map: HashMap<u32, Vec<u32>> = HashMap::new();
